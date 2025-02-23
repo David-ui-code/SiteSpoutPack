@@ -193,6 +193,7 @@
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
   transition-duration: 0.5s;
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px);
 }
 
 .u-section-2 .u-layout-cell-2 {
@@ -210,6 +211,7 @@
   --animation-custom_in-rotate: 0deg;
   --animation-custom_in-scale: 1;
   transition-duration: 0.5s;
+  transform: rotate(0deg) scale(1) translateX(0px) translateY(0px);
 }
 
 @media (max-width: 1199px) {
@@ -290,10 +292,12 @@
 
 .u-section-2 .u-video-2.u-video-2.u-video-2:hover {
   border-radius: 10px !important;
+  transform: scale(1.1) translateX(0px) translateY(0px) !important;
 }
 
 .u-section-2 .u-video-2.u-video-2.u-video-2.hover {
   border-radius: 10px !important;
+  transform: scale(1.1) translateX(0px) translateY(0px) !important;
 }
 
 .u-section-2 .u-video-1,
@@ -310,6 +314,7 @@
   border-bottom-width: 2px !important;
   border-color: #404040 !important;
   border-radius: 10px !important;
+  transform: scale(1.1) translateX(0px) translateY(0px) !important;
 }
 
 .u-section-2 .u-video-1 {
@@ -324,6 +329,7 @@
   border-bottom-width: 2px !important;
   border-color: #404040 !important;
   border-radius: 10px !important;
+  transform: scale(1.1) translateX(0px) translateY(0px) !important;
 }
 
 .u-section-2 .u-video-1 {
