@@ -1095,11 +1095,11 @@ ol {
 .u-nav-item a,
 .u-filter-item a,
 .u-product-control.u-text a {
-  font-size: inherit;
-  font-family: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  text-transform: inherit;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
+  text-transform: inherit !important;
 }
 .u-text:not(ul):not(ol):not(p):not(.u-post-content):not(.u-block-content):not(.u-product-desc):not(.u-cart-block-content):not(.u-checkout-block-content) a {
   color: inherit;
@@ -15351,6 +15351,7 @@ section.u-image:not(.u-hover-box),
 }
 .u-file-icon img {
   object-fit: contain;
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -19075,6 +19076,23 @@ img.u-opacity-0,
 .u-opacity-0.u-menu-overlay {
   opacity: 0;
 }
+.u-opacity-var:before,
+section.u-opacity-var:before,
+.u-hover-box > .u-opacity-var.u-container-layout:before,
+.u-opacity-var > .u-container-layout:before,
+.u-opacity-var > .u-audio-main-layout-wrapper:before,
+.u-opacity-var > .u-inner-container-layout:before,
+.u-opacity-var.u-sidenav:before {
+  opacity: var(--opacity);
+}
+a.u-opacity-var,
+span.u-opacity-var,
+img.u-opacity-var,
+.u-opacity-var.u-line,
+.u-opacity-var.u-shape,
+.u-opacity-var.u-menu-overlay {
+  opacity: var(--opacity);
+}
 [class*="u-custom-color-"].u-body,
 [class*="u-palette-"].u-body,
 [class*="u-gray-"].u-body,
@@ -19301,9 +19319,6 @@ blockquote .small:before {
 }
 .u-search input::placeholder {
   font-family: inherit;
-}
-.u-search-icon {
-  box-sizing: content-box;
 }
 .u-search-left .u-search-icon[class*="u-border-"] {
   margin-right: 0.8em;
@@ -24588,6 +24603,7 @@ span.product-remove:after {
   --year-month-top-right-border-radius: unset;
   --year-month-bottom-left-border-radius: unset;
   --year-month-bottom-right-border-radius: unset;
+  
   --days-text-color: unset;
   --days-text-default-color: unset;
   --days-border-color: unset;
@@ -24707,6 +24723,12 @@ span.product-remove:after {
     margin-left: auto;
     margin-right: auto;
   }
+}
+.u-calendar .qs-squares {
+  gap: 0px;
+}
+.u-calendar .qs-square {
+  width: calc((100% - 0px * 6) / 7);
 }
 .u-calendar .qs-square:not(.qs-empty):not(.qs-disabled):not(.qs-day):not(.qs-active):hover {
   background-color: var(--num-hover-color);
@@ -24880,8 +24902,10 @@ span.product-remove:after {
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
-  height: 25%;
-  padding: 5%;
+  min-height: 15%;
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
 .u-calendar .u-calendar-error-message,
 .u-calendar .u-calendar-conflict-message,
@@ -45338,6 +45362,12 @@ a.u-link.u-text-hover-grey-90:hover {
   --radius: 15px;
   margin: -35px 183px 42px auto;
 }
+
+.u-header .u-search-icon-1 {
+  width: 36px;
+  height: 36px;
+  padding: 10px;
+}
 @media (max-width: 1199px) {
   .u-header .u-image-1 {
     margin-left: 139px;
@@ -45527,8 +45557,8 @@ a.u-link.u-text-hover-grey-90:hover {
 .u-footer .u-text-7 {
   font-size: 0.75rem;
   font-weight: 400;
-  width: 619px;
   letter-spacing: normal;
+  width: 649px;
   margin: 7px auto;
 }
 
@@ -45558,6 +45588,10 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 }
 @media (max-width: 991px) {
+   .u-footer {
+    min-height: 310px;
+  }
+
   .u-footer .u-group-1 {
     min-height: 282px;
   }
@@ -45625,6 +45659,10 @@ a.u-link.u-text-hover-grey-90:hover {
   .u-footer .u-image-1 {
     margin-top: 33px;
   }
+
+  .u-footer .u-text-7 {
+    width: 641px;
+  }
 }
 @media (max-width: 767px) {
   .u-footer .u-group-elements-1 {
@@ -45667,17 +45705,16 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-group-elements-1 {
     width: 231px;
-    min-height: 492px;
-    margin-top: 36px;
+    min-height: 455px;
   }
 
   .u-footer .u-text-1 {
-    width: 204px;
+    margin-top: 0;
   }
 
   .u-footer .u-text-2 {
-    width: 184px;
-    margin-top: 185px;
+    width: 150px;
+    margin-top: 143px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -45691,7 +45728,7 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-text-4 {
     width: 207px;
-    margin-top: -367px;
+    margin-top: -320px;
     margin-left: auto;
     margin-right: auto;
   }
