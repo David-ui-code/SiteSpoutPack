@@ -17,7 +17,8 @@
 }
 
 .u-section-1 .u-blog-1 {
-  display: none;
+  margin-top: 36px;
+  margin-bottom: 60px;
 }
 
 .u-section-1 .u-sorting-1 {
@@ -138,8 +139,6 @@
   .u-section-1 .u-blog-1 {
     min-height: 768px;
     height: auto;
-    margin-top: 36px;
-    margin-bottom: 60px;
   }
 
   .u-section-1 .u-repeater-1 {
@@ -167,5 +166,13 @@
 @media (max-width: 575px) {
   .u-section-1 .u-search-1 {
     width: 340px;
+  }
+
+  .u-section-1 .u-blog-1 {
+    display: none;
+    min-height: auto;
+    height: auto;
+    margin-top: initial;
+    margin-bottom: initial;
   }
 }
