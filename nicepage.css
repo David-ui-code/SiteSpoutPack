@@ -45322,7 +45322,7 @@ a.u-link.u-text-hover-grey-90:hover {
   height: 79px;
   transition-duration: 0.5s;
   transform: rotate(0deg) scale(1) translateX(0px) translateY(0px);
-  margin: 22px auto 0 87px;
+  margin: 22px auto 0 65px;
 }
 
 .u-header .u-logo-image-1 {
@@ -45360,7 +45360,7 @@ a.u-link.u-text-hover-grey-90:hover {
   min-height: 38px;
   --open-width: 50%;
   --radius: 15px;
-  margin: -35px 130px 43px auto;
+  margin: -35px 109px 43px auto;
 }
 
 .u-header .u-search-icon-1 {
@@ -45379,14 +45379,16 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-menu-1 {
+    width: auto;
     margin-top: -56px;
+    margin-right: 31px;
     margin-bottom: 48px;
   }
 
   .u-header .u-search-1 {
     width: 38px;
     margin-top: -35px;
-    margin-right: 130px;
+    margin-right: 109px;
     margin-bottom: 60px;
   }
 }
@@ -45398,12 +45400,13 @@ a.u-link.u-text-hover-grey-90:hover {
   .u-header .u-image-1 {
     width: 87px;
     height: 84px;
+    margin-top: 23px;
   }
 
   .u-header .u-menu-1 {
-    width: auto;
-    margin-top: -56px;
+    margin-top: -60px;
     margin-right: 0;
+    margin-bottom: 47px;
   }
 
   .u-header .u-file-icon-1 {
@@ -45421,6 +45424,7 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-menu-1 {
+    margin-top: -60px;
     margin-right: 0;
     margin-left: 484px;
   }
@@ -45436,7 +45440,8 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-header .u-menu-1 {
-    margin-bottom: 58px;
+    margin-top: -59px;
+    margin-bottom: 60px;
     margin-left: auto;
   }
 
@@ -45641,7 +45646,9 @@ a.u-link.u-text-hover-grey-90:hover {
 
   .u-footer .u-text-5 {
     width: auto;
-    margin: -19px 0 0 490px;
+    margin-top: -19px;
+    margin-bottom: 0;
+    margin-left: 490px;
   }
 
   .u-footer .u-text-6 {
@@ -45668,7 +45675,6 @@ a.u-link.u-text-hover-grey-90:hover {
   .u-footer .u-group-elements-1 {
     width: 682px;
     min-height: 195px;
-    margin-bottom: 0;
   }
 
   .u-footer .u-text-1 {
@@ -45764,7 +45770,6 @@ a.u-link.u-text-hover-grey-90:hover {
   .u-footer .u-group-elements-1 {
     width: 206px;
     min-height: 413px;
-    margin-bottom: 0;
   }
 
   .u-footer .u-text-1 {
@@ -45811,10 +45816,9 @@ a.u-link.u-text-hover-grey-90:hover {
   }
 
   .u-footer .u-text-5 {
-    width: 160px;
     margin-top: 1px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-right: 16px;
+    margin-left: 23px;
   }
 
   .u-footer .u-text-6 {
